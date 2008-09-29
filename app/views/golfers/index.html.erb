@@ -1,0 +1,22 @@
+<h1>Listing golfers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Earnings</th>
+  </tr>
+
+<% for golfer in @golfers %>
+  <tr>
+    <td><%=h golfer.name %></td>
+    <td><%=h golfer.earnings %></td>
+    <td><%= link_to 'Show', golfer %></td>
+    <td><%= link_to 'Edit', edit_golfer_path(golfer) %></td>
+    <td><%= link_to 'Destroy', golfer, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New golfer', new_golfer_path %>

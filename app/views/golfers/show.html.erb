@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @golfer.name %>
+</p>
+
+<p>
+  <b>Earnings:</b>
+  <%=h @golfer.earnings %>
+</p>
+
+
+<%= link_to 'Edit', edit_golfer_path(@golfer) %> |
+<%= link_to 'Back', golfers_path %>

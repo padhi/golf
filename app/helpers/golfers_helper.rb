@@ -1,0 +1,2 @@
+module GolfersHelper
+end
